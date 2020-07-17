@@ -23,13 +23,23 @@ body {
   display: flex;
 } 
 
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+/*----------------------- Navbar Styles --------------------------*/
 .nav-bar {
-  width: 70%;
+  width: 98rem;
   height: 3.6rem;
-  margin: 8rem auto;
+  margin: 0 auto;
   background-image: var(--nav-bar-gradient);
   border: solid var(--nav-bar-border) 0.4px;
   border-radius: 3px;
+  position: absolute;
+  top: 8rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav-bar ul {
@@ -54,10 +64,10 @@ body {
   margin-top: -0.2rem;
   }
 
-  .nav-bar input {
+  .nav-bar input[type="text"] {
+    width: 80%;
+    margin: 0 auto;
     margin-top: -0.2rem;
-    margin-left: 1.3rem;
-    width: 10rem;
     background-color: transparent;
     border-radius: 2.5rem;
     position: relative;
@@ -65,7 +75,7 @@ body {
 
   .fa-search {
     position: absolute;
-    left: 2rem;
+    left: 2.5rem;
     top: 0.4rem;
     font-size: 1.2rem !important;
   }
@@ -78,4 +88,60 @@ body {
   right: 0;
   position: absolute;
   background-color: var(--nav-bar-border);
+}
+
+/*--------------------- Hero Section ------------------------*/
+.header {
+  background-image: url("./img/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 80vh;
+  position: relative;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.header-content h1 {
+  font-size: 5rem;
+  line-height: 3.6rem;
+  font-weight: 100;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.header-content p {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.margin-top {
+  margin-top: 5rem;
+  position: relative;
+}
+
+.header-content a {
+  text-decoration: none;
+  border-bottom: 0.5px solid transparent;
+  transition: all 0.4s;
+}
+
+.header-content i {
+  margin-left: 1rem;
+  font-size: 3.5rem;
+  position: absolute;
+  top: 0.3rem;
+}
+
+/*------------------------ Hover States --------------------------*/
+.header-content a:hover {
+  border-bottom: 0.5px solid white;
 }
