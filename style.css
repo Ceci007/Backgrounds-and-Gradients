@@ -24,7 +24,7 @@ body {
 } 
 
 .container {
-  max-width: 95%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -141,7 +141,33 @@ body {
   top: 0.3rem;
 }
 
+/*----------------------------- Products --------------------*/
+.products {
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+
+.image-box {
+  width: 41.5rem;
+  height: auto;
+  margin: 0.3rem 0.15rem;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*------------------------ Hover States --------------------------*/
 .header-content a:hover {
   border-bottom: 0.5px solid white;
+}
+
+@media screen and (max-width: 1380px) {
+  html {
+    font-size: 50%;
+  }
 }
