@@ -1,34 +1,38 @@
-/*------------------------ Common Styles -------------------------*/ 
+/* ------------------------ Common Styles ------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap');
 
-*, *:before, *:after { 
-  margin: 0; 
-  padding: 0; 
-  box-sizing: border-box; 
-} 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-html { 
-  font-size: 62.5%; 
-} 
+html {
+  font-size: 62.5%;
+}
 
-:root { 
+:root {
   --nav-bar-border: #333;
-  --nav-bar-gradient: linear-gradient(rgb(140,140,140) 10% ,rgb(100,100,100) 49%, rgb(82, 82, 82) 51%, rgb(120,120,120));
-} 
-body { 
-  font-family: 'Montserrat', sans-serif; 
-} 
-.flex { 
+  --nav-bar-gradient: linear-gradient(rgb(140, 140, 140) 10%, rgb(100, 100, 100) 49%, rgb(82, 82, 82) 51%, rgb(120, 120, 120));
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.flex {
   display: flex;
-} 
+}
 
 .container {
   width: 100%;
   margin: 0 auto;
 }
 
-/*----------------------- Navbar Styles --------------------------*/
+/* ----------------------- Navbar Styles -------------------------- */
 .nav-bar {
   width: 98rem;
   height: 3.6rem;
@@ -62,25 +66,25 @@ body {
 .nav-bar i {
   font-size: 2rem;
   margin-top: -0.2rem;
-  }
+}
 
-  .nav-bar input[type="text"] {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: -0.2rem;
-    background-color: transparent;
-    border-radius: 2.5rem;
-    position: relative;
-  }
+.nav-bar input[type="text"] {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -0.2rem;
+  background-color: transparent;
+  border-radius: 2.5rem;
+  position: relative;
+}
 
-  .fa-search {
-    position: absolute;
-    left: 2.5rem;
-    top: 0.4rem;
-    font-size: 1.2rem !important;
-  }
+.fa-search {
+  position: absolute;
+  left: 2.5rem;
+  top: 0.4rem;
+  font-size: 1.2rem !important;
+}
 
-  .nav-bar li:not(:last-child)::after {
+.nav-bar li:not(:last-child)::after {
   content: "";
   width: 0.4px;
   height: 3.6rem;
@@ -90,7 +94,7 @@ body {
   background-color: var(--nav-bar-border);
 }
 
-/*--------------------- Hero Section ------------------------*/
+/* --------------------- Hero Section ------------------------ */
 .header {
   background-image: url("./img/hero-bg.jpg");
   background-size: cover;
@@ -141,13 +145,12 @@ body {
   top: 0.3rem;
 }
 
-/*----------------------------- Products --------------------*/
+/* ----------------------------- Products -------------------- */
 .products {
   flex-wrap: wrap;
   margin: 0 auto;
   justify-content: center;
 }
-
 
 .image-box {
   width: 24%;
@@ -161,7 +164,7 @@ body {
   object-fit: cover;
 }
 
-/*------------------------ Footer --------------------------*/
+/* ------------------------ Footer -------------------------- */
 
 .footer {
   justify-content: space-around;
@@ -188,7 +191,7 @@ body {
   margin-right: 2rem;
 }
 
-.line:after {
+.line::after {
   content: "";
   width: 0.1rem;
   height: 1.6rem;
@@ -198,7 +201,7 @@ body {
   top: 0;
 }
 
-/*------------------------ Hover States --------------------------*/
+/* ------------------------ Hover States -------------------------- */
 .header-content a:hover {
   border-bottom: 0.5px solid white;
 }
