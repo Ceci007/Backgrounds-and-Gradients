@@ -1,0 +1,81 @@
+/*------------------------ Common Styles -------------------------*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap'); 
+
+*, *:before, *:after { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+} 
+
+html { 
+  font-size: 62.5%; 
+} 
+
+:root { 
+  --nav-bar-border: #333;
+  --nav-bar-gradient: linear-gradient(rgb(140,140,140) 10% ,rgb(100,100,100) 49%, rgb(82, 82, 82) 51%, rgb(120,120,120));
+} 
+body { 
+  font-family: 'Montserrat', sans-serif; 
+} 
+.flex { 
+  display: flex;
+} 
+
+.nav-bar {
+  width: 70%;
+  height: 3.6rem;
+  margin: 8rem auto;
+  background-image: var(--nav-bar-gradient);
+  border: solid var(--nav-bar-border) 0.4px;
+  border-radius: 3px;
+}
+
+.nav-bar ul {
+  list-style: none;
+}
+
+.nav-bar li {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-top: 0.9rem;
+  text-align: center;
+  position: relative;
+}
+
+.nav-bar li:not(:last-child) {
+  width: 10.3rem;
+}
+
+.nav-bar i {
+  font-size: 2rem;
+  margin-top: -0.2rem;
+  }
+
+  .nav-bar input {
+    margin-top: -0.2rem;
+    margin-left: 1.3rem;
+    width: 10rem;
+    background-color: transparent;
+    border-radius: 2.5rem;
+    position: relative;
+  }
+
+  .fa-search {
+    position: absolute;
+    left: 2rem;
+    top: 0.4rem;
+    font-size: 1.2rem !important;
+  }
+
+  .nav-bar li:not(:last-child)::after {
+  content: "";
+  width: 0.4px;
+  height: 3.6rem;
+  top: -1rem;
+  right: 0;
+  position: absolute;
+  background-color: var(--nav-bar-border);
+}
