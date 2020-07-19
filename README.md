@@ -2,7 +2,7 @@
 
 > This is the fourth project for the Html and Css curriculum of the Microverse full time program. We made a mock-up of an old version of the apple homepage.
 
-![screenshot](./page-screenshot.jpg)
+![screenshot](./app_screenshot.png)
 
 
 ## Built With
